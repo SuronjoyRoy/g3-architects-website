@@ -15,6 +15,7 @@ body{
     cursor: pointer;
     border: 0;
 }
+
 /* Header Css start */
 
 header {
@@ -79,4 +80,41 @@ nav {
     margin-top: 2rem;
     padding-bottom: 3rem;
 }
+/* Team area css styles */
+
+.team-area {
+    padding: 80px 0px;
+}
+
+.team-content {
+    display: flex;
+    align-items: center;
+}
+.team-img img {
+    width: 320px;
+}
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-right: 40px;
+}
+.team-details {
+    padding-left: 40px;
+}
+.team-details h1 {
+    font-size: 2.8rem;
+}
+.text-gray{
+    color: #727272;
+}
+.quick{
+    font-weight: 500;
+}
+.feature-color{
+    color: #FF900E;
+}
+/* Responsive Css styles */
+
+
 
