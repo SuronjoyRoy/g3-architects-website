@@ -15,7 +15,9 @@ body{
     cursor: pointer;
     border: 0;
 }
-
+.hidden{
+    display: none;
+}
 /* Header Css start */
 
 header {
@@ -34,15 +36,15 @@ nav {
     width: 1140px;
     margin: 0 auto;
 }
-.container> ul {
+.menu> ul {
     display: flex;
 }
 
-.container li{
+.menu li{
     list-style: none;
     display: inline-block;
 }
-.container li a{
+.menu li a{
     text-decoration: none;
     color: #424242;
     font-size: 1rem;
@@ -116,5 +118,42 @@ nav {
 }
 /* Responsive Css styles */
 
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-description h1 {
+        font-size: 3rem;
+    }
+    .title-description p {
+        padding: 0px 20px; 
+    }
+    .team-img {
+        grid-template-columns: 1fr;
+    }
+    .team-content {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .team-img img {
+        width: 100%;
+        padding-left: 20px;
+      }
 
+}
 
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header {
+        
+    }
+
+}
